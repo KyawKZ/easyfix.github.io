@@ -32,19 +32,22 @@
             color: white;
             font-family: Tahoma;
         }
-        p2{
+        p4{
             margin-bottom: 0;
             font-size: 24pt;
             font-weight: bold;
             transition: 5s;
             white-space: nowrap;
         }
+        p2{
+            display: none;
+        }
         p3{
             margin: 0;
             margin-top: 0;
             padding-left: 20px;
             font-size: 16pt;
-            white-space: nowrap
+            white-space: nowrap;
         }
         .btns{
             position:absolute;
@@ -130,12 +133,46 @@
             font-size: 22pt;
         cursor: pointer;
     }
-    @media (max-width: 700px){
+    @media (max-width: 768px){
+        p4{
+            display: none;
+        }
+        p2{
+            display: block;
+            margin-bottom: 0;
+            font-size: 18pt;
+            font-weight: bold;
+            transition: 5s;
+            white-space: nowrap;
+        }
         .btns{
             position: absolute;
-            margin: auto;
+            margin: 0;
             top: 100vh;
             transform: translateY(-100);
+        }
+        body{
+            max-width: 100%;
+        }
+        .waves{
+            top: 150px;
+        }
+        .heading{
+            position: absolute;
+            width: 100%;
+        }
+        p1{
+            font-size: 22pt;
+        }
+        .adtext{
+            font-size: 14pt;
+        }
+        .listbox{
+            left: 10px;
+            font-size: 14pt;
+        }
+        p3{
+            font-size: 14pt;
         }
     }
     </style>
@@ -153,7 +190,8 @@
         </div>
         <div class="adtext">
             <hr>
-            <p2>Get The Best Solution For Your Devices<br><hr></p>
+            <p2>Get The Best Solution<br>For Your Devices<br><hr></p2>
+            <p4>Get The Best Solution For Your Devices<br><hr></p4>
         </div>
         <div class="waves">
             <img src="graphics/circuit.png" alt="circuits">
