@@ -239,6 +239,15 @@
         function closeNav(){
             document.getElementById("clp").style.width="0";
         }
+        function android(){
+            window.location.href='android.html';
+        }
+        function android(){
+            window.location.href='ios.html';
+        }
+        function android(){
+            window.location.href='course.html';
+        }
     </script>
     <head>
         <div class="heading">
@@ -248,16 +257,16 @@
     </head>
     <body>
         <div class="btns">
-            <button class="and"><img src="graphics/android2.png" width="100px" height="50px"></button>
-            <button class="ios" onclick="location.href='services.html'"><img src="graphics/iOS2.png" width="90px" height="45px "></button>
-            <button class="serv">Apply Course</button>
+            <button class="and" onclick="location.href='android.html'"><img src="graphics/android2.png" width="100px" height="50px"></button>
+            <button class="ios" onclick="location.href='ios.html'"><img src="graphics/iOS2.png" width="90px" height="45px "></button>
+            <button class="serv" onclick="location.href='course.html'">Apply Course</button>
         </div>
         <div class="sidenav">
         <div id="clp" class="nav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Android</a>
-            <a href="#">iOS</a>
-            <a href="#">Apply Course</a>
+            <a href="javascript:android()">Android</a>
+            <a href="javascript:ios()">iOS</a>
+            <a href="javascript:course()">Apply Course</a>
         </div>
         <button onclick="openNav()"><img src="graphics/nav.png" alt="?" width="25px" height="25px"></button>
         </div>
