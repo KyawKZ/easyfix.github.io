@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <title>Easy Fix Mobile Course</title>
+    <link rel="icon" href="graphics/logo.png" type="image/x-icon"/>
+    <div class="header">
+        <img src="graphics/logo.png" width="100px" height="100px" onclick="home()">
+        <p1 onclick="home()">Easy Fix Mobile Service</p1>
+        <br>
+    </div>
+    </head>
+    <style>
+        body{
+            margin: 0;
+            background-color: white;
+            opacity: 1;
+            animation-name: fadeIn;
+            animation-iteration-count: 1;
+	        animation-timing-function: ease-in;
+	        animation-duration: 3s;
+        }
+        @keyframes fadeIn{
+            0% {
+		        opacity: 0;
+	        }
+	        100% {
+		        opacity: 1;
+	        }
+        }
+        .header{
+            position: fixed;
+            background-color: white;
+            background-image: url(graphics/banner.png);
+            background-size: cover;
+            width: 100dvw;
+            height: 100px;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .header, img{
+            position: 0;
+            top: 0;
+            left: 0;
+            vertical-align: middle;
+        }
+        p1{
+            position: absolute;
+            font-family: Tahoma;
+            font-size: 30pt;
+            font-weight: bold;
+            color: white;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        .container{
+            display: table;
+            position: relative;
+            left: 5px;
+            top: 120px;
+            border-radius: 10px;
+            background-color: azure;
+            width: 99.5dvw;
+            height: 325px;
+        }
+        .box{
+            display: block;
+            overflow: hidden;
+            float: left;
+            margin-left: 5px;
+            margin-top: 5px;
+            margin-right: 10px;
+            width: 31.8%;
+            height: 300px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            background-color: beige;
+            border-radius: 5px;
+            box-shadow: 10px 10px 5px #aaaaaa
+        }
+        h2{
+            position: relative;
+            float: right;
+            right: 20px;
+        }
+        .ad{
+            position:relative;
+            top: 5px;
+            right: 8px;
+            float: right;
+            text-align: right;
+        }
+        .md{
+            position:relative;
+            top: 5px;
+            right: 8px;
+            text-align: center;
+        }
+        .ap{
+            position:relative;
+            top: 5px;
+            left: 5px;
+            text-align: left;
+        }
+        .tx{
+            position: inherit;
+            float: left;
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: justify;
+        }
+        .ctc{
+            position: absolute;
+            display: table;
+            width: 99dvw;
+            height: 80px;
+            left: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 14pt;
+            margin-top: 130px;
+            border-radius: 5px;
+            background-color: orange;
+        }
+        .ti{
+            position: relative;
+            float: left;
+            left: 10px;
+            top: 10px;
+        }
+        #ccc{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16pt;
+            font-weight: bold;
+            float: left;
+            margin-left: 30px;
+            margin-top: 10px;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: darkorange;
+            border: 5px black;
+        }
+        #ccc:hover{
+            background-color: orangered;
+        }
+        @media (max-width: 768px){
+            .box{
+                width: 95%;
+            }
+            p1{
+                font-size: 20pt;
+            }
+            .container{
+                height: 940px;
+            }
+        }
+    </style>
+    <script>
+        function call(){
+            window.location.href='tel:09692404055';
+        }
+        function home(){
+            window.location.href='index.html';
+        }
+    </script>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="les">
+                    <img src="graphics/a.png" width="120px" height="150px" style="float: left;">
+                    <div class="ad">
+                        <h style="font-size: 20pt;">Android Basic</h><br><br>
+                        <span>What is Android OS?</span><br>
+                        <span>Android Partitions</span><br>
+                        <span>Using Adb, Fastboot & Recovery</span><br>
+                        <span>Flashing TWRP</span><br>
+                        <span>Installing Root</span><br>
+                    </div>
+                    <div class="tx">
+                        <p>&emsp;Include basic things you need to know about Android OS. After this section, you will become expert in <span style="background-color: orange;border-radius: 5px;">Flashing Custom ROMs </span>and <span style="background-color: darkgreen;border-radius: 5px;color: white;">Flashing ROMs via fastboot</span>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="les">
+                    <center><img src="graphics/cpus.png" width="210px" height="60px"></center>
+                    <div class="md">
+                        <h style="font-size: 20pt;">Qualcomm - MTK - SPRD</h><br><br>
+                        <span>Boot ROM</span><br>
+                        <span>Firmware Flashing Based on CPU</span><br>
+                        <span>Factory Reset, Account Lock, FRP Bypass</span><br>
+                    </div>
+                    <div class="tx">
+                        <p>&emsp;The advanced methods to work with various mobile devices : <span style="background-color: orange;border-radius: 5px;">Bypassing/Unlocking Security</span>, <span style="background-color: limegreen;border-radius: 5px;">Fix Dead Boot</span>, <span style="background-color: skyblue;border-radius: 5px;">Repari Network</span>, etc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="les">
+                    <img src="graphics/apl.png" width="210px" height="120px" style="float: right;">
+                    <div class="ap">
+                        <h style="font-size: 20pt;">Apple iOS</h><br><br>
+                        <span>DFU / Recovery Mode</span><br>
+                        <span>Flash, Bypass iCloud/MDM</span><br>
+                        <span>Apple ID</span><br>
+                    </div>
+                    <div class="tx">
+                        <p>&emsp;How to boot recovery/DFU mode in various iDevices. Bypass iCloud using : <span style="background-color: limegreen;border-radius: 5px;">Jailbreak</span>, <span style="background-color: skyblue;border-radius: 5px;">Ramdisk</span> and creating Apple ID.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ctc">
+            <div class="ti">
+                <span>Duration : <span style="background-color: azure;border-radius: 5px;">3 Months</span></span><br>
+                <span>Price : <span style="background-color: beige;border-radius: 5px;">250000MMk</span></span>
+            </div>
+            <div class="btn">
+                <button id="ccc" onclick="call()">Contact</button>
+            </div>
+        </div>
+    </body>
+</html>
