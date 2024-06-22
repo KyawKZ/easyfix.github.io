@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <title>Easy Fix Services</title>
+    <link rel="icon" href="graphics/logo.png" type="image/x-icon"/>
+    <style>
+        .heading{
+            position: fixed;
+            background-color: white;
+            background-image: url(graphics/banner.png);
+            background-size: cover;
+            width: 100dvw;
+            height: 100px;
+            top: 0;
+            left: 0;
+            z-index: 5;
+        }
+        body{
+            background-color: #fff;
+            margin: 0;
+        }
+        p1{
+            position: absolute;
+            font-family: Tahoma;
+            font-size: 28pt;
+            font-weight: bold;
+            color: white;
+            margin-left: 10px;
+            margin-top: 20px;;
+        }
+        .tbl{
+            position: absolute;
+            top: 130px;
+            left: 1px;
+            right: 20px;
+            width: 100dvw;
+            height: auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24pt;
+            font-weight: bold;
+            z-index: 0;
+        }
+        th{
+            background-color: rgb(129, 129, 129);
+            border-style: 1px solid rgb(10, 10, 10);
+            color: white;
+            border-radius: 5px;
+            border-collapse: separate;
+        }
+        td{
+            border-radius: 5px;
+            background-color: rgb(226, 225, 224);
+            font-size: 14pt;
+            font-weight: normal;
+        }
+        #rmx{
+            color: white;
+            background-color: rgb(255, 252, 55);
+        }
+        #tec{
+            color: white;
+            background-color: rgb(54, 53, 52);
+        }
+        #xm{
+            color: white;
+            background-color: darkorange;
+        }
+        #ss{
+            color: white;
+            background-color: rgb(0, 141, 197);
+        }
+        #opp{
+            color: white;
+            background-color: rgb(0, 136, 52);
+        }
+        #vv{
+            color: white;
+            background-color: rgb(24, 28, 250);
+        }
+        #br{
+            width: 10%;
+        }
+        #p{
+            width: 20%;
+        }
+        #md,#sv{
+            width: 35%;
+        }
+        #acc{
+            color: white;
+            background-color: green;
+        }
+        #gb{
+            color: white;
+            background-color: limegreen;
+        }
+        #frp{
+            color: white;
+            background-color: darkorange;
+        }
+        #pr{
+            color: white;
+            background-color: rgb(255, 123, 0);
+        }
+        .mobile-view{
+            display: none;
+        }
+        @media (max-width:768px){
+         .tbl{
+            display: none;
+         }   
+         .mobile-view{
+            display: table;
+            position: relative;
+            border-radius: 5px;
+            background-color: rgb(252, 250, 239);
+            width: 97dvw;
+            height: auto;
+            top: 120px;
+            left: 5px;
+            border-radius: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 16pt;
+         }
+         .col{
+            margin-left: 3px;
+            margin-top: -15px;
+            width: 99%;
+            height: auto;
+            background-color: rgb(211, 220, 228);
+            border-radius: 10px;
+         }
+         p1{
+            font-size: 22pt;
+         }
+         .col h3{
+            text-align: center;
+         }
+         #xm{
+            border-radius: 8px;
+         }
+         span{
+            border-radius: 5px;
+         }
+         #xm,#opp,#vv,#ss,#tec,#rmx{
+            border-radius: 5px;
+         }
+         .cl{
+            border: 50px black;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            width: 180px;
+            height: 45px;
+            background-color: rgb(156, 156, 156);
+            color: white;
+            vertical-align: middle;
+            font-size: 16pt;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        .cl:hover{
+            background-color: #3f2020;
+        }
+        }
+    </style>
+    <script>
+        function call(){
+            window.location.href='tel:09692404055';
+        }
+    </script>
+    <head>
+        <div class="heading">
+            <img src="graphics/logo.png" width="100px" height="100px">
+            <p1>Easy Fix Mobile Service</p1>
+        </div>
+    </head>
+    <body>
+        <div class="mobile-view">
+            <div class="col">
+                <div id="xm">
+                    <h3>Mi Account Unlock</h3>
+                </div>
+                <p>Supported Models : <span id="acc">All Models</span></p>
+                <p>Price : <span id="pr">75000MMK</span></p>
+                <p>Requirement : <span style="background-color: red;">Unlock Code Shown on Lock Screen. Lost Mode Not Supported.</span></p>
+                <p>Duration : <span style="background-color: orange;">7 to 10 Days</span></p>
+            </div>
+            <div class="col">
+                <div id="xm">
+                    <h3>Mi Account Open Menu</h3>
+                </div>
+                <p>Supported Models : <span id="acc">All Models</span></p>
+                <p>Price : <span id="pr">15000MMK</span></p>
+                <p>Requirement : <span style="background-color: red;">Device Must Not Be Locked.</span></p>
+                <p>Duration : <span style="background-color: orange;">1 to 6 Hours</span></p>
+            </div>
+            <div class="col">
+                <div id="xm">
+                    <h3>Redmi 1 to 6 Series</h3>
+                </div>
+                <p>Services : <span id="acc">Account Bypass</span><span id="gb">Global Change</span><span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">8000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="xm">
+                    <h3>Redmi 7/ Note 7 Series</h3>
+                </div>
+                <p>Services : <span id="acc">Account Bypass</span><span id="gb">Global Change</span><span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">10000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="xm">
+                    <h3>Redmi 8/ Note 8 Series</h3>
+                </div>
+                <p>Services : <span id="acc">Account Bypass</span><span id="gb">Global Change</span><span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">10000 - 15000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="xm">
+                    <h3>Redmi 9/ Note 9 Series</h3>
+                </div>
+                <p>Services : <span id="acc">Account Bypass</span><span id="gb">Global Change</span><span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">10000 - 15000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="xm">
+                    <h3>Redmi 10/ Note 10 Series</h3>
+                </div>
+                <p>Services : <span id="acc">Account Bypass</span><span id="gb">Global Change</span><span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">10000 - 15000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="xm">
+                    <h3>Redmi Note 11 Series</h3>
+                </div>
+                <p>Services : <span id="acc">Account Bypass</span><span id="gb">Global Change</span><span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">12000 - 25000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="xm">
+                    <h3>Redmi 12/ Note 12 Series</h3>
+                </div>
+                <p>Services : <span id="acc">Account Bypass</span><span id="gb">Global Change</span><span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">15000 - 25000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="xm">
+                    <h3>Redmi 13/ Note 13 Series</h3>
+                </div>
+                <p>Services : <span id="acc">Account Bypass</span><span id="gb">Global Change</span><span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">15000 - 35000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="xm">
+                    <h3>Mi 11 Series</h3>
+                </div>
+                <p>Services : <span id="acc">Account Bypass</span><span id="gb">Global Change</span><span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">12000 - 70000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="xm">
+                    <h3>Mi 12, 13, 14 Series</h3>
+                </div>
+                <p>Services : <span id="acc">Account Bypass</span><span id="gb">Global Change</span><span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">20000 - 70000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="ss">
+                    <h3>Samsung(Before 2019)</h3>
+                </div>
+                <p>Services : <span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">8000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="ss">
+                    <h3>Samsung(After 2019)</h3>
+                </div>
+                <p>Userlock+FRP : <span id="frp">10000 - 35000MMK</span></p>
+                <p>MDM : <span id="pr">~100000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 Mins - 24 Hr</span></p>
+            </div>
+            <div class="col">
+                <div id="opp">
+                    <h3>Oppo(Before 2020)</h3>
+                </div>
+                <p>Services : <span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">8000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="opp">
+                    <h3>Samsung(After 2020)</h3>
+                </div>
+                <p>Userlock+FRP : <span id="frp">10000 - 15000MMK</span></p>
+                <p>MDM : <span id="pr">35000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 Mins - 24 Hr</span></p>
+            </div>
+            <div class="col">
+                <div id="vv">
+                    <h3>Vivo(Before 2020)</h3>
+                </div>
+                <p>Services : <span id="frp">Userlock+FRP</span></p>
+                <p>Price : <span id="pr">8000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 - 60 Mins</span></p>
+            </div>
+            <div class="col">
+                <div id="vv">
+                    <h3>Vivo(After 2020)</h3>
+                </div>
+                <p>Userlock+FRP : <span id="frp">10000 - 15000MMK</span></p>
+                <p>MDM/SIM Lock : <span id="pr">35000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 Mins - 24 Hr</span></p>
+            </div>
+            <div class="col">
+                <div id="rmx">
+                    <h3>Realme</h3>
+                </div>
+                <p>Userlock+FRP : <span id="frp">10000 - 15000MMK</span></p>
+                <p>MDM/SIM Lock : <span id="pr">35000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 Mins - 24 Hr</span></p>
+            </div>
+            <div class="col">
+                <div id="tec">
+                    <h3>Tecon & Infinix</h3>
+                </div>
+                <p>Userlock+FRP : <span id="frp">10000 - 15000MMK</span></p>
+                <p>MDM : <span id="pr">60000MMK</span></p>
+                <p>Duration : <span style="background-color: orange;">30 Mins - 24 Hr</span></p>
+            </div>
+            <div>
+                <hr>
+                <center><button class="cl" onclick="call()">Call Now</button></center>
+                <hr>
+            </div>
+        </div>
+        <div class="tbl">
+            <table style="width: 100%;">
+                <tr>
+                    <th id="br">Brand</th>
+                    <th id="md">Model</th>
+                    <th id="sv">Service</th>
+                    <th id="p">Price</th>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Xiaomi All Model</span></td>
+                    <td>
+                        <span id="acc">Mi Account Official Unlock</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">75000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Xiaomi All Model</span></td>
+                    <td>
+                        <span id="acc">Open Menu Finddevice Off</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">15000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Redmi 1 to 6 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">8000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Redmi 7/ Note 7 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">10000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Redmi 8/ Note 8 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">10000 - 15000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Redmi 9 / Note 9 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">10000 - 15000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Redmi 10/ Note 10 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">10000 - 15000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Redmi Note 11 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">12000 - 25000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Redmi 12/ Note 12 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">15000 - 25000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Redmi 13/ Note 13 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">15000 - 35000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Mi 8 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">12000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Mi 9/10 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">15000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Mi 11 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">12000 - 70000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="xm">Xiaomi</td>
+                    <td><span id="mdl">Mi 12, 13, 14 Series</span></td>
+                    <td>
+                        <span id="acc">Mi Account Bypass</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">20000 - 70000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="ss">Samsung</td>
+                    <td><span id="mdl">Samsung Before 2019</span></td>
+                    <td>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">8000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="ss">Samsung</td>
+                    <td><span id="mdl">Samsung After 2019</span></td>
+                    <td>
+                        <span id="frp">Userlock+FRP</span>
+                        <span id="gb">MDM</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">10000 - 35000MMK</span><br>MDM : <span id="pr">~100000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="opp">Oppo</td>
+                    <td><span id="mdl">Oppo Before 2020</span></td>
+                    <td>
+                        <span id="acc">Oppo ID Lock</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">8000 - 15000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="opp">Oppo</td>
+                    <td><span id="mdl">Oppo After 2020</span></td>
+                    <td>
+                        <span id="acc">Oppo ID Lock</span>
+                        <span id="frp">MDM/Network Lock</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">10000 - 35000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="vv">Vivo</td>
+                    <td><span id="mdl">Vivo Before 2020</span></td>
+                    <td>
+                        <span id="acc">Vivo Account Lock</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">8000 - 15000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="vv">Vivo</td>
+                    <td><span id="mdl">Vivo After 2020</span></td>
+                    <td>
+                        <span id="acc">Vivo Account Lock</span>
+                        <span id="frp">MDM/Network Lock</span>
+                        <span id="gb">Global Change</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">10000 - 35000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="rmx">Realme</td>
+                    <td><span id="mdl">Realme All Model</span></td>
+                    <td>
+                        <span id="frp">MDM/Network Lock</span>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">80000 - 35000MMK</span></td>
+                </tr>
+                <tr>
+                    <td id="tec">Tecno, Infinix</td>
+                    <td><span id="mdl">Tecno All Model</span></td>
+                    <td>
+                        <span id="frp">Userlock+FRP</span>
+                    </td>
+                    <td style="text-align: right;"><span id="pr">10000 - 15000MMK</span><br>MDM : <span id="pr">60000MMK</span></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
